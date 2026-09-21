@@ -1,0 +1,18 @@
+{
+  "name": "@codew-ext/zhuiyi-guangda-coding-spec",
+  "version": "1.0.0",
+  "description": "在光大客户项目中按风险域落实研发、安全、测试与投产规范",
+  "keywords": [
+    "code-workspace-extension"
+  ],
+  "codeWorkspace": {
+    "schemaVersion": 1,
+    "extensionId": "zhuiyi-guangda-coding-spec",
+    "extensionSpecVersion": 1,
+    "packageRoot": "extension",
+    "packageSha256": "fcd3476416ba3202a4bf59ebd9e074ad2d7a6e05b5db26dbb4b4b1b68d26a842"
+  },
+  "files": [
+    "extension"
+  ]
+}

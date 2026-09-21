@@ -1,0 +1,18 @@
+{
+  "name": "@codew-ext/zhuiyi-jira-mcp",
+  "version": "1.1.0",
+  "description": "为 Codex 和 Claude 配置 Jira MCP 服务",
+  "keywords": [
+    "code-workspace-extension"
+  ],
+  "codeWorkspace": {
+    "schemaVersion": 1,
+    "extensionId": "zhuiyi-jira-mcp",
+    "extensionSpecVersion": 1,
+    "packageRoot": "extension",
+    "packageSha256": "c69503ed5b372e5f9536b6b4ef74e75f521c22f2a96c7a0445446c1f5db1a417"
+  },
+  "files": [
+    "extension"
+  ]
+}

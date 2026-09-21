@@ -1,0 +1,18 @@
+{
+  "name": "@codew-ext/zhuiyi-jira-issue-fix-summary",
+  "version": "1.0.0",
+  "description": "总结已修复问题并确认后发布 Jira 评论",
+  "keywords": [
+    "code-workspace-extension"
+  ],
+  "codeWorkspace": {
+    "schemaVersion": 1,
+    "extensionId": "zhuiyi-jira-issue-fix-summary",
+    "extensionSpecVersion": 1,
+    "packageRoot": "extension",
+    "packageSha256": "d25ff6173de49ed2c33bcdd99911091b71b95ba8e8e6df3de01352ceba61c92b"
+  },
+  "files": [
+    "extension"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@codew-ext/codew-extension-devlopement-guide",
+  "version": "0.1.0",
+  "description": "引导 Code-W 扩展的需求澄清、开发、打包与发布交接",
+  "keywords": [
+    "code-workspace-extension"
+  ],
+  "codeWorkspace": {
+    "schemaVersion": 1,
+    "extensionId": "codew-extension-devlopement-guide",
+    "extensionSpecVersion": 1,
+    "packageRoot": "extension",
+    "packageSha256": "92822aefe2c6ab8604f7741c8dd7b94f926e8e8a4c1d9e70a1eb989feb4407b8"
+  },
+  "files": [
+    "extension"
+  ]
+}

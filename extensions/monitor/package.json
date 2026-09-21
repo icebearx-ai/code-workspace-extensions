@@ -1,0 +1,18 @@
+{
+  "name": "@codew-ext/monitor",
+  "version": "1.1.0",
+  "description": "监控 Agent 会话、执行状态与待授权请求",
+  "keywords": [
+    "code-workspace-extension"
+  ],
+  "codeWorkspace": {
+    "schemaVersion": 1,
+    "extensionId": "monitor",
+    "extensionSpecVersion": 1,
+    "packageRoot": "extension",
+    "packageSha256": "93ac53b04cc4ab5d347b94089e42ece9d96f39f3d326538c2871aaa1853fde80"
+  },
+  "files": [
+    "extension"
+  ]
+}

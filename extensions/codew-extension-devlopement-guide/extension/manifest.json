@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "extensionSpecVersion": 1,
+  "experimental": true,
+  "id": "codew-extension-devlopement-guide",
+  "name": "Code-W Extension Development Guide",
+  "description": "引导 Code-W 扩展的需求澄清、开发、打包与发布交接",
+  "version": "0.1.0",
+  "entry": "init.js",
+  "entrySha256": "901811d9cbf304b1c2f3f009f9824cf09330a3cf726edcdab48d952659624eac",
+  "timeoutMs": 30000,
+  "capabilities": {},
+  "outputs": [
+    {
+      "id": "codex-skill",
+      "kind": "directory",
+      "ownership": "exclusive",
+      "target": ".codex/skills/codew-extension-devlopement-guide",
+      "tools": [
+        "codex"
+      ]
+    },
+    {
+      "id": "claude-skill",
+      "kind": "directory",
+      "ownership": "exclusive",
+      "target": ".claude/skills/codew-extension-devlopement-guide",
+      "tools": [
+        "claude"
+      ]
+    }
+  ]
+}
