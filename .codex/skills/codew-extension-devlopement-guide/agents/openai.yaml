@@ -1,0 +1,6 @@
+interface:
+  display_name: "Code-W Extension Development Guide"
+  short_description: "Guide Code-W extension build and release"
+  default_prompt: "Use $codew-extension-devlopement-guide to take my Code-W extension requirement through confirmation, implementation, packing, and release handoff."
+policy:
+  allow_implicit_invocation: false
