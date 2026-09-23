@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const EXTENSION_ID = "codew-extension-devlopement-guide";
-const EXTENSION_VERSION = "0.1.0";
+const EXTENSION_VERSION = "0.1.1";
 
 function option(name) {
   const index = process.argv.indexOf(name);

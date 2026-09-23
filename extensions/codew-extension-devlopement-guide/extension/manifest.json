@@ -5,9 +5,9 @@
   "id": "codew-extension-devlopement-guide",
   "name": "Code-W Extension Development Guide",
   "description": "引导 Code-W 扩展的需求澄清、开发、打包与发布交接",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "entry": "init.js",
-  "entrySha256": "901811d9cbf304b1c2f3f009f9824cf09330a3cf726edcdab48d952659624eac",
+  "entrySha256": "58a129fb763cb952b31898f88158e509520b0bde936707c226f86385b8f684d4",
   "timeoutMs": 30000,
   "capabilities": {},
   "outputs": [

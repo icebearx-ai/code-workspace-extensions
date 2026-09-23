@@ -27,7 +27,6 @@ AI 负责：澄清需求，执行初始化，开发扩展，运行开发校验�
 - manifest：`references/canonical/spec/extension/v1/specification.zh-CN.md`、`references/canonical/schemas/extension-manifest-v3.json`
 - `init.js`：`references/canonical/schemas/extension-init-context-v1.json`、`references/canonical/schemas/extension-init-result-v1.json`
 - 打包运输包：`references/canonical/schemas/extension-npm-transport-envelope-v1.json`
-- 本地安装调试：`references/local-install.zh-CN.md`
 - 发布上线：`references/nexus-publish.zh-CN.md`
 - 快照来源与版本核对：`references/canonical/SOURCE.md`
 
@@ -117,13 +116,13 @@ codew extension pack <confirmed-path> --output ./dist --json
 
 #### A. 本地安装调试
 
-读取 `references/local-install.zh-CN.md`，让开发者选择一个已初始化的测试 workspace，然后提供完整的本地闭环：
+读取 `references/extension-development-guide.zh-CN.md` 中本地 tarball 安装说明，让开发者选择一个已初始化的测试 workspace，然后提供完整的本地闭环：
 
 ```text
-install-local -> 本地测试 -> extension uninstall
+extension pack -> extension install --local -> 本地测试 -> extension uninstall
 ```
 
-至少给出与本次 tarball 对应的 `codew extension install-local <path-to-tarball.tgz> --yes` 和卸载命令，并说明 `install-local` 的当前实现状态及关键限制。不要把扩展默认安装到真实业务 Workspace；只有开发者明确指定测试 Workspace 并要求执行时才运行安装或卸载。
+至少给出与本次 tarball 对应的 `codew extension install --local <path-to-tarball.tgz> --yes` 和卸载命令，并说明关键限制：只接受一个 `.tgz` 文件，不支持源码目录，不能与 `--version`、`--allow-deprecated` 或 `--offline` 组合，也不会覆盖相同 id/version 下的不同 package digest。不要把扩展默认安装到真实业务 Workspace；只有开发者明确指定测试 Workspace 并要求执行时才运行安装或卸载。
 
 #### B. 发布上线
 
