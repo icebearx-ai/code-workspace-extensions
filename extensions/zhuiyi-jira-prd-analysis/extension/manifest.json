@@ -5,9 +5,9 @@
   "id": "zhuiyi-jira-prd-analysis",
   "name": "Zhuiyi Jira PRD Analysis",
   "description": "确认 Jira 范围并分析需求与代码可行性",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "entry": "init.js",
-  "entrySha256": "903d6129130b2e847a8ceb2dcd45ceb1848370ed5303bab055935bb6feaf4ea7",
+  "entrySha256": "50bfc0c461f210004c9aa45877b1e3a66c9deb98b5c418ba1a1207a54662bbde",
   "timeoutMs": 30000,
   "capabilities": {},
   "outputs": [
@@ -16,21 +16,27 @@
       "kind": "file",
       "ownership": "exclusive",
       "target": ".codex/skills/zhuiyi-jira-prd-analysis/SKILL.md",
-      "tools": ["codex"]
+      "tools": [
+        "codex"
+      ]
     },
     {
       "id": "codex-openai",
       "kind": "file",
       "ownership": "exclusive",
       "target": ".codex/skills/zhuiyi-jira-prd-analysis/agents/openai.yaml",
-      "tools": ["codex"]
+      "tools": [
+        "codex"
+      ]
     },
     {
-      "id": "claude-skill",
+      "id": "claude-command",
       "kind": "file",
       "ownership": "exclusive",
-      "target": ".claude/skills/zhuiyi-jira-prd-analysis/SKILL.md",
-      "tools": ["claude"]
+      "target": ".claude/commands/codew/zhuiyi-jira-prd-analysis.md",
+      "tools": [
+        "claude"
+      ]
     }
   ]
 }

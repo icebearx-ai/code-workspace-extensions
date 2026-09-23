@@ -27,7 +27,7 @@ codew extension install <extension-id> --version <version> --yes
 | `zhuiyi-guangda-coding-spec` | 中国光大银行客户项目研发规范 Skill | `1.0.0` | [README](extensions/zhuiyi-guangda-coding-spec/README.md) |
 | `zhuiyi-jira-issue-fix-summary` | 生成并确认 Jira 修复总结后发布评论 | `1.0.0` | [README](extensions/zhuiyi-jira-issue-fix-summary/README.md) |
 | `zhuiyi-jira-mcp` | Jira 查询、附件、关联任务和写入能力 | `1.1.0` | [README](extensions/zhuiyi-jira-mcp/README.md) |
-| `zhuiyi-jira-prd-analysis` | Jira 需求范围、完整性和代码可行性分析 | `1.0.0` | [README](extensions/zhuiyi-jira-prd-analysis/README.md) |
+| `zhuiyi-jira-prd-analysis` | Jira 需求范围、完整性和代码可行性分析 | `1.2.0` | [README](extensions/zhuiyi-jira-prd-analysis/README.md) |
 | `zhuiyi-jira-task-breakdown` | 将已确认需求拆分为前端、后端和测试任务 | `1.0.0` | [README](extensions/zhuiyi-jira-task-breakdown/README.md) |
 | `zhuiyi-opensvn-mcp` | OpenSVN 页面、目录和设计资料读取 | `0.2.0` | [README](extensions/zhuiyi-opensvn-mcp/README.md) |
 

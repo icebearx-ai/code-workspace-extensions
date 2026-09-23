@@ -1,17 +1,15 @@
 ---
-name: zhuiyi-jira-prd-analysis
-description: "仅在用户显式调用 $zhuiyi-jira-prd-analysis 时，先确认 Jira 父任务/子任务范围，再检查需求的清晰度、一致性和验收条件，最后结合所选代码库评估实现可行性，并把每个歧义或冲突交由用户决策。不要隐式调用本 Skill。"
+description: 仅在用户显式调用 /codew:zhuiyi-jira-prd-analysis 时运行：先确认 Jira 父任务/子任务范围，再检查需求的清晰度、一致性和验收条件，最后结合所选代码库评估实现可行性，并把每个歧义或冲突交由用户决策。
+argument-hint: "<Jira 链接或本次需求范围>"
 ---
 
-# Jira 需求分析
-
-仅在用户显式调用 `$zhuiyi-jira-prd-analysis` 时启动。不要从普通的 Jira 查询、需求分析、代码开发或其他 Jira 话题请求中推断调用。
+仅当用户显式执行 `/codew:zhuiyi-jira-prd-analysis` 时运行本工作流。不要从普通的 Jira 查询、需求分析、代码开发或其他 Jira 话题请求中推断调用。`$ARGUMENTS` 是 Jira 链接或本次需求范围；为空时先向用户索取 Jira 链接或范围，不要读取 Jira 内容或代码。
 
 ## 可用资料来源
 
 遇到内部 Jira 链接时，使用 `zhuiyi-jira-mcp` 获取需求正文、评论、附件、关联任务和子任务等可访问内容。
 
-设计稿可能是 Jira HTML 附件，也可能是 OpenSVN 页面；分别使用 `zhuiyi-jira-mcp` 和 `zhuiyi-opensvn-mcp` 获取。MCP 自身已经说明调用方法，本 Skill 不重复工具参数和操作步骤。
+设计稿可能是 Jira HTML 附件，也可能是 OpenSVN 页面；分别使用 `zhuiyi-jira-mcp` 和 `zhuiyi-opensvn-mcp` 获取。MCP 自身已经说明调用方法，本命令不重复工具参数和操作步骤。
 
 如果缺少对应 MCP，或调用因鉴权、权限、配置、网络等原因失败，直接告诉用户缺少了什么资料、会影响哪部分分析，并建议检查对应 MCP 的鉴权或配置。不要编造未取得的内容。
 
@@ -81,4 +79,6 @@ description: "仅在用户显式调用 $zhuiyi-jira-prd-analysis 时，先确认
 
 明确区分资料中的事实、AI 的推断、暂用假设和未知信息。关键结论引用 Jira、设计稿或代码证据。
 
-本 Skill 负责分析和决策准备，不直接实施代码变更。用户要求实施时，应在需求口径和执行范围已经确认后作为后续任务处理。
+本命令负责分析和决策准备，不直接实施代码变更。用户要求实施时，应在需求口径和执行范围已经确认后作为后续任务处理。
+
+$ARGUMENTS

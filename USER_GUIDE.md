@@ -109,13 +109,13 @@ codew extension uninstall zhuiyi-jira-prd-analysis --yes
 - `$zhuiyi-jira-issue-fix-summary` — 总结已完成的问题修复，并在确认后发布到 Jira 评论。
 - `$zhuiyi-guangda-coding-spec` — 仅在项目属于中国光大银行客户项目时，按本次任务的风险域落实研发、安全、测试与投产规范。
 
-这些扩展只安装 Skill 指令。Jira 相关扩展需要实际访问 Jira 时，还应安装 `zhuiyi-jira-mcp` 扩展；光大规范扩展不依赖任何 MCP 服务。
+这些扩展只安装 Skill 指令或 Claude 命令。Jira 相关扩展需要实际访问 Jira 时，还应安装 `zhuiyi-jira-mcp` 扩展；光大规范扩展不依赖任何 MCP 服务。
 
 | 用途 | Codex | Claude Code |
 | --- | --- | --- |
 | 添加工作区项目 | `$codew-add-projects` | `/codew:add-projects` |
 | 解决项目分支不一致 | `$codew-resolve-branch` | `/codew-resolve-branch` |
-| 分析 Jira 需求 | `$zhuiyi-jira-prd-analysis` | `$zhuiyi-jira-prd-analysis` |
+| 分析 Jira 需求 | `$zhuiyi-jira-prd-analysis` | `/codew:zhuiyi-jira-prd-analysis` |
 | 拆分 Jira 任务 | `$zhuiyi-jira-task-breakdown` | `$zhuiyi-jira-task-breakdown` |
 | 总结问题修复 | `$zhuiyi-jira-issue-fix-summary` | `$zhuiyi-jira-issue-fix-summary` |
 | 落实光大研发规范 | `$zhuiyi-guangda-coding-spec` | `$zhuiyi-guangda-coding-spec` |

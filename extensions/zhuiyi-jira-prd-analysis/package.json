@@ -1,6 +1,6 @@
 {
   "name": "@codew-ext/zhuiyi-jira-prd-analysis",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "确认 Jira 范围并分析需求与代码可行性",
   "keywords": [
     "code-workspace-extension"
@@ -10,7 +10,7 @@
     "extensionId": "zhuiyi-jira-prd-analysis",
     "extensionSpecVersion": 1,
     "packageRoot": "extension",
-    "packageSha256": "673020b505afccb5ce8865748c9eed13a8c22befba782fee64b001efc33f9ebd"
+    "packageSha256": "669994ee8c937812cd749817ff1d2c42c5676cbd10ed5330c93252f6368987c7"
   },
   "files": [
     "extension"

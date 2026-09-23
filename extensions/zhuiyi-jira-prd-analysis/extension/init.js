@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const EXTENSION_ID = "zhuiyi-jira-prd-analysis";
-const EXTENSION_VERSION = "1.0.0";
+const EXTENSION_VERSION = "1.2.0";
 
 function option(name) {
   const index = process.argv.indexOf(name);
@@ -41,8 +41,8 @@ function main() {
     outputs.push({ id: "codex-openai", source: "codex/agents/openai.yaml" });
   }
   if (context.tools.includes("claude")) {
-    copyAsset(outputRoot, "assets/SKILL.md", "claude/SKILL.md");
-    outputs.push({ id: "claude-skill", source: "claude/SKILL.md" });
+    copyAsset(outputRoot, "assets/claude/zhuiyi-jira-prd-analysis.md", "claude/commands/codew/zhuiyi-jira-prd-analysis.md");
+    outputs.push({ id: "claude-command", source: "claude/commands/codew/zhuiyi-jira-prd-analysis.md" });
   }
   if (outputs.length === 0) throw new Error("No supported Agent tools selected");
 

@@ -16,13 +16,17 @@ codew extension install zhuiyi-jira-prd-analysis
 
 安装后：
 
-- Codex 使用 `.codex/skills/zhuiyi-jira-prd-analysis/SKILL.md`；
-- Claude 使用 `.claude/skills/zhuiyi-jira-prd-analysis/SKILL.md`。
+- Codex 使用被动触发的 Skill `.codex/skills/zhuiyi-jira-prd-analysis/SKILL.md`，仅当显式调用 `$zhuiyi-jira-prd-analysis` 时生效；
+- Claude Code 使用命令 `.claude/commands/codew/zhuiyi-jira-prd-analysis.md`，通过 `/codew:zhuiyi-jira-prd-analysis` 显式调用。
 
-使用时显式调用 `zhuiyi-jira-prd-analysis`，并提供 Jira 链接或明确的需求范围。分析依赖 `zhuiyi-jira-mcp` 获取 Jira 资料，设计稿位于 OpenSVN 时还需要 `zhuiyi-opensvn-mcp`。鉴权失败或资料不足时，Skill 会停止并说明缺少的资料，不会根据标题或猜测补写需求。
+使用时显式调用并提供 Jira 链接或明确的需求范围，不会因普通 Jira 或开发请求自动触发。分析依赖 `zhuiyi-jira-mcp` 获取 Jira 资料，设计稿位于 OpenSVN 时还需要 `zhuiyi-opensvn-mcp`。鉴权失败或资料不足时，会停止并说明缺少的资料，不会根据标题或猜测补写需求。
 
-## 
+## 卸载
 
 ```bash
 codew extension uninstall zhuiyi-jira-prd-analysis --yes
 ```
+
+## 更新日志
+
+版本变更见 [CHANGELOG.md](CHANGELOG.md)。
